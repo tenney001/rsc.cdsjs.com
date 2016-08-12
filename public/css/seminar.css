@@ -1,0 +1,60 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/*-----------------------RESET----------------------*/
+i,em{ font-style:normal;}
+a{ color:#333;}
+a:hover{ color:#c3272b;}
+.color_33{ color: #333; }
+.color_66{ color: #666; }
+.color_99{ color: #999; }
+.color_145{ color: #1453b2; }
+.color_ae3{ color: #ae3034; }
+.color_ff{ color:#fff;}
+.color_df3{ color: #df322f; }
+.over_hi{ overflow: hidden; }
+.f18{ font-size: 18px; }
+.f30{ font-size: 30px; }
+.font_b{ font-weight: bold; }
+body{ background:#fff; font-family:"微软雅黑";}
+.warpper{ width:100%; font-family:"微软雅黑",Arial, Helvetica, sans-serif; font-size:13px; padding-top: 347px; background:#e1e3ed url(../images/seminar_banner.jpg) no-repeat top center;}
+.main{ width:1002px; margin:0 auto;}
+/*-----------------------首页----------------------*/
+.left{ width:542px;}
+.right{ width:447px;}
+.radius_shadow{ border-radius: 5px; box-shadow:0 0 4px #c1c1ca;}
+.border_1c32{ border-bottom: 1px solid #c3272b; }
+/*--单条新闻--*/
+.single_news{ padding: 15px; background: #e8e9eb; }
+.single_news .coopera{ width: 620px; padding: 20px 60px; color: #666; font-size:16px; }
+/*--图片新闻--*/
+.img_news{ width:520px; height:270px; overflow: hidden; position: relative; background:#e8e9eb; padding:10px;}
+.img_div{ width:520px; height:270px;}
+.slides li{ position: relative; }
+.img_news p{ width: 520px; height: 47px; line-height: 47px; background: url(../images/img_news_bg.png) repeat; position: absolute; bottom: 0; left: 10px; z-index: 9999; }
+.flex-control-nav{ position:absolute; right:10px; bottom:28px;}
+.flex-control-nav li{ float:left; margin-right: 10px;}
+.flex-control-nav li a{ display:block; width:12px; height:12px; background:#fff; text-indent: 99999em; border-radius: 50%;}
+.flex-control-nav li a.flex-active{ background: #c3272b; }
+.flex-direction-nav{ display: none; }
+/*--文字新闻--*/
+.txt_news{ width:510px; height:260px; padding: 15px; background:#e8e9eb; position:relative;}
+.txt_title{ display:block; border-left:5px solid #c3272b; line-height: 15px; padding-left: 10px;}
+.mt7{ margin-top:7px;}
+.bordert_none{ border-top:0px;}
+.h26{ height:26px;}
+.news_list li{ line-height:25px; background:url(../images/li_tip.jpg) no-repeat 0px center; padding-left:10px;}
+.news_list li.borderb_none{ border-bottom:0px;}
+/*--右边新闻--*/
+.right .txt_news{ width: 415px;  }
+/*---------底部设置-----------*/
+.foot{ width:100%; padding: 20px 0; background:#484747;}
+.link_div{ padding:30px 95px; _padding:30px 47px;}
+.mr115{ margin-right:115px;}
+.word_space{ white-space:nowrap;}
+.link_div table tr td{ width:25%; line-height:32px;}
+.border_38{ border:3px solid #3877bb;}
+.bkgrd_38{ background:#3877bb;}
+.h40{ height:40px; line-height:40px;}
+.borderb_59{ border-bottom:1px solid #5f91c8;}
+.people_div{ width:158px; height:30px; line-height:30px; border:1px solid #fff; background:url(../images/bar_tip.jpg) left center no-repeat; margin:0 auto; margin-top:15px; padding-left:50px;}
+.pb118{ padding-bottom:118px;}

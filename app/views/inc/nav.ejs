@@ -1,0 +1,25 @@
+<div class="nav">
+    <ul class="main clearfix">
+        <li class="text_center"><a href="/" class="color_ff f16 font_wei current">首页</a></li>
+        <% 
+            var lastClass = '';
+          var list = getHomeNavList;
+          for(o in list){
+        %>
+            <% if(o==list.length-1) {%>
+                <li class="text_center bg_none"><a href="/nav/<%= list[o]._id %>" class="color_ff f16 font_wei <%= setCurrentNav('/nav/'+list[o]._id) %>"><%= list[o].name %></a></li>
+            <%} else {%>
+                <li class="text_center"><a href="/nav/<%= list[o]._id %>" class="color_ff f16 font_wei <%= setCurrentNav('/nav/'+list[o]._id) %>"><%= list[o].name %></a></li>
+            <%}%>
+        <%}%>
+        <!-- <li class="text_center"><a href="#" class="color_ff f16 font_wei current">首页</a></li>
+        <li class="text_center"><a href="#" class="color_ff f16 font_wei">部门简介</a></li>
+        <li class="text_center"><a href="#" class="color_ff f16 font_wei">审计公告</a></li>
+        <li class="text_center"><a href="#" class="color_ff f16 font_wei">新闻动态</a></li>
+        <li class="text_center"><a href="#" class="color_ff f16 font_wei">政策法规</a></li>
+        <li class="text_center"><a href="#" class="color_ff f16 font_wei">资料下载</a></li>
+        <li class="text_center"><a href="#" class="color_ff f16 font_wei">警钟长鸣</a></li>
+        <li class="text_center"><a href="#" class="color_ff f16 font_wei">在线学习</a></li>
+        <li class="text_center bg_none"><a href="#" class="color_ff f16 font_wei">网上举报</a></li> -->
+    </ul>
+</div>

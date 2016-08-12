@@ -1,0 +1,16 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/*-----------------------详细----------------------*/
+/*--时间+搜索--*/
+.search_div{ width: 170px; height: 20px; line-height: 20px; border: 1px solid #135ab3; border-radius: 5px; }
+.search_div input{ width: 133px; height: 18px; background: #e1e3ed; margin-top: -2px; margin-left: 2px; padding: 0 5px; border: 0; vertical-align: middle; }
+.search_div a{ display: inline-block; width: 20px; height: 20px; text-align: center; vertical-align: middle; }
+/*--新闻内容--*/
+.content{ padding: 60px; min-height: 500px; background: #e8e9eb; }
+.radius_shadow{ border-radius: 5px; box-shadow:0 0 4px #c1c1ca;}
+.title{ font-weight: bold; font-size: 26px; text-align: center; color: #0f47a6; line-height: 30px;}
+.time{ color: #999; text-align: center; margin-top: 10px; padding-bottom: 40px; }
+.files{ background: #e1e3ed; padding: 10px 30px; border-radius: 5px;}
+.summary{ color: #0f47a6; margin-top: 40px; }
+.details{ margin-top: 30px; overflow: hidden; }
+.details img{ max-width: 100%; }

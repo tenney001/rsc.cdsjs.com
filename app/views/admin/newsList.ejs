@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN"  ng-app="myApp">
+    <head>
+        <% include inc/meta.ejs %>
+
+        <title><%= title %></title>
+
+        <% include inc/headerlink.ejs %>
+    </head>
+    <body ng-controller='news'>
+        <% include inc/nav.ejs %>
+        
+        <div class="container">
+            <button type="button" class="btn btn-primary" ng-click='add()'>添加新闻</button>
+
+            <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>新闻名称</th>
+                    <th style="min-width:100px">新闻分类</th>
+                    <th>新闻描述</th>
+                    <th style="min-width:100px">添加时间</th>
+                    <th style="min-width:100px">修改时间</th>
+                    <th style="min-width:100px">操作</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr ng-repeat="item in list" ng-show='showlist'>
+                    <td>1</td>
+                    <td>{{item.title}}</td>
+                    <td>{{item.newsType.name}}</td>
+                    <td>{{item.describe}}</td>
+                    <td>{{item.meta.createAt}}</td>
+                    <td>{{item.meta.updateAt}}</td>
+                    <td>
+                        <button type="button" class="btn btn-warning btn-xs"   ng-click='update(item._id)'>修改</button>
+                        <button type="button" class="btn btn-danger btn-xs" ng-click='del(item._id)'>删除</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+
+        
+    </body>
+    <% include inc/footerlink.ejs %>
+    <script type="text/javascript" src="/js/news.js"></script>
+</html>

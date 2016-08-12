@@ -1,0 +1,37 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/*-----------------------首页----------------------*/
+.left{ width:270px;}
+.right{ width:715px;}
+.radius_shadow{ border-radius: 5px; box-shadow:0 0 4px #c1c1ca;}
+.border_1c32{ border-bottom: 1px solid #c3272b; }
+/*--时间+搜索--*/
+.search_div{ width: 170px; height: 20px; line-height: 20px; border: 1px solid #135ab3; border-radius: 5px; }
+.search_div input{ width: 133px; height: 18px; background: #e1e3ed; margin-top: -2px; margin-left: 2px; padding: 0 5px; border: 0; vertical-align: middle; }
+.search_div a{ display: inline-block; width: 20px; height: 20px; text-align: center; vertical-align: middle; }
+
+/*--文字新闻--*/
+.txt_news{ width:240px; padding: 15px; background:#e8e9eb; position:relative;}
+.txt_title{ display:block; font-weight: bold; border-left:5px solid #c3272b; line-height: 15px; padding-left: 10px;}
+.mt7{ margin-top:7px;}
+.h26{ height:26px;}
+.second_list li a{ display: block; line-height:25px; font-size: 14px;}
+.second_list li a.current{ color: #1453b2; background: url(../images/second_li_bg.jpg) no-repeat right center; }
+.news_list li{ line-height:25px; background:url(../images/li_tip.jpg) no-repeat 0px center; padding-left:10px;}
+.text_2em{ text-indent: 2em; }
+/*--右边新闻--*/
+.right .txt_news{ width: 685px;  }
+.one_list li .title{ background:url(../images/li_tip_33.jpg) no-repeat 0px center; padding-left:10px;}
+.one_list li .intro{ line-height: 20px; color: #666; padding-left: 10px; }
+.one_list li .reply{ margin-top: 5px; color: #1453b2; padding-left: 10px; }
+.page{ background: #fff; padding: 10px; }
+.page .pagetotal,.page .prev,.page .pagenum,.page .next{ display: inline-block; padding: 5px 10px; border:1px solid #ccc; }
+.page .pagenum.current{ border: 1px solid #fff; }
+
+/*--添加留言--*/
+.msg_input,.msg_textarea{ display: block; width: 280px; height: 35px; line-height: 35px; margin-top: 10px; border-radius: 5px; padding-left: 10px; background:#e1e3ed; }
+.msg_input input{ border:0; background:#e1e3ed; font-family:"微软雅黑",Arial, Helvetica, sans-serif; width: 190px; padding:0 5px; height: 30px; }
+.msg_textarea{ height: 215px; }
+.msg_textarea textarea{ width: 260px; height: 170px; font-family:"微软雅黑",Arial, Helvetica, sans-serif; padding:0 5px; resize: none; border:0; background:#e1e3ed; }
+.reset_btn,.sub_btn{ width: 60px; height: 30px; border: 0; background: #c3272b; border-radius: 5px; color: #fff; font-family:"微软雅黑",Arial, Helvetica, sans-serif; font-size: 14px;  }
+.sub_btn{ background: #1453b2; margin-left:10px; }

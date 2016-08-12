@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+/*-----------------------RESET----------------------*/
+i,em{ font-style:normal;}
+a{ color:#333;}
+a:hover{ color:#c3272b;}
+.color_33{ color: #333; }
+.color_66{ color: #666; }
+.color_99{ color: #999; }
+.color_145{ color: #1453b2; }
+.color_ae3{ color: #ae3034; }
+.color_be3{ color: #be3a3e; }
+.f18{ font-size: 18px; }
+.f30{ font-size: 30px; }
+.font_b{ font-weight: bold; }
+body{ background:#fff; font-family:"微软雅黑";}
+input,textarea{ font-family:"微软雅黑",Arial, Helvetica, sans-serif;}
+.warpper{ width:100%; font-family:"微软雅黑",Arial, Helvetica, sans-serif; font-size:13px; padding-top: 227px; background:#e1e3ed url(../images/banner.jpg) no-repeat top center;}
+.main{ width:1002px; margin:0 auto;}
+/*-----------头部设置------------*/
+.nav{ width:100%; height:48px; background: #013b85; overflow:hidden;}
+.nav ul li{ float:left; width:111.3px; height:48px; background:url(../images/nav_border.jpg) right center no-repeat; line-height:48px;}
+.nav ul li a{ width:111.3px; height:48px; line-height:48px; display:block;}
+.nav ul li.bg_none{ background:none;}
+.nav ul li a:hover,.nav ul li a.current{ background:#01295d; color: #fff;}
+/*---------底部设置-----------*/
+.foot{ width:100%; padding: 20px 0; background:#1453b2;}
+.link_div{ padding:30px 95px; _padding:30px 47px;}
+.mr115{ margin-right:115px;}
+.word_space{ white-space:nowrap;}
+.link_div table tr td{ width:25%; line-height:32px;}
+.border_38{ border:3px solid #3877bb;}
+.bkgrd_38{ background:#3877bb;}
+.h40{ height:40px; line-height:40px;}
+.borderb_59{ border-bottom:1px solid #5f91c8;}
+.people_div{ width:158px; height:30px; line-height:30px; border:1px solid #fff; background:url(../images/bar_tip.jpg) left center no-repeat; margin:0 auto; margin-top:15px; padding-left:50px;}
+.pb118{ padding-bottom:118px;}
+/*----------其他页面模版----------*/
+.color_9e{ color:#9e9e9e;}
+.color_ff{ color:#fff;}
+.color_0e{ color:#0e519c;}
+.color_e1{ color:#e12d04;}
+.color_00{ color:#000;}
+.font_wei,p{ font-family:"微软雅黑";}
+.border_b2{ border:1px solid #b2d1fd;}
+.ver_mid{ vertical-align:middle;}
+.over_hi{ overflow:hidden;}
+.bkgrd_ff{ background:#fff;}
+.bkgrd_ffb{ background:#fffbee;}
+.position_re{ position:relative;}
+@font-face {
+font-family: 'fangsong';
+src: local('FangSong Regular'),
+local('FangSong'),
+url('http://dev.kungfuenglish.com/simfang.ttf') format('truetype');
+}

@@ -1,0 +1,29 @@
+{
+  "name": "rsc.cdsjs.com",
+  "description": "website rewrite by nodejs",
+  "main": "",
+  "authors": [
+    "Tenney <270078781@qq.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "website"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "3.3.5",
+    "jquery": "1.11.3",
+    "normalize-css": "normalize.css#4.1.1",
+    "angular": "1.3.0",
+    "angular-momentjs": "^0.2.2",
+    "moment": "2.9.0"
+  }
+}

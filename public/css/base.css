@@ -1,0 +1,97 @@
+@charset "utf-8";
+/* CSS Document */
+/*-----------------------RESET----------------------*/
+html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, a, img, dl, dt, dd,ol, ul, li{margin: 0;	padding: 0;	border: 0;	outline: 0;	font-size: 100%; }/*vertical-align: baseline;*/
+ol,ul {list-style: none;}
+body {font-size:12px;line-height:160%;}
+a:link, a:visited, a:hover, a:active {text-decoration:none;outline:none;}
+em{
+	font-style:normal;
+}
+a,input{ cursor:pointer;}
+
+/*-------------------------公用样式---------------------------------*/
+.clear {clear: both;}
+.clearfix:after {content: "\0020";display: block;height: 0;clear: both;}
+.clearfix { _zoom: 1;}
+*+html .clearfix {overflow:auto;}
+
+.fl{float:left;}
+.fr{float:right;}
+
+.mt5{margin-top:5px;}.mr5{margin-right:5px;}.mb5{margin-bottom:5px;}.ml5{margin-left:5px;}
+.mt10{margin-top:10px;}.mr10{margin-right:10px;}.mb10{margin-bottom:10px;}.ml10{margin-left:10px;}
+.mt15{ margin-top: 15px; }
+.mt20{margin-top:20px;}.ml20{margin-left:20px;}.ml35{margin-left:35px;}.ml83{margin-left:83px;}.ml65{margin-left:65px;}.ml30{margin-left:30px;}.mt30{margin-top:30px;}
+.mt35{ margin-top:35px;}.mt40{ margin-top:40px;}
+.mr20{ margin-right:20px;}
+.mr50{
+	margin-right:50px;
+}
+.ml40{ margin-left:40px;}
+.ml45{margin-left:45px;}.ml50{margin-left:50px;}
+.ml60{margin-left:60px;}.ml25{margin-left:25px;}
+.pt5{padding-top:5px;}.pr5{padding-right:5px;}.pb5{padding-bottom:5px;}.pl5{padding-left:5px;}
+.pt10{padding-top:10px;}.pr10{padding-right:10px;}.pb10{padding-bottom:10px;}.pl10{padding-left:10px;}
+.pb20{ padding-bottom:20px;}.pl20{ padding-left:20px;}.pt20{ padding-top:20px;}.pd10{ padding: 10px; }
+.pl40{ padding-left:40px;}
+.font25_clear{
+	font-weight:bold;
+	font-size:25px;
+	color:#333333;
+
+}
+.mr8{
+	margin-right:8px;
+}
+/*字体格式*/
+.fb14{font-size:14px;font-weight:bold;}
+.f14{font-size:14px;}
+.f16{ font-size:16px;}
+.font18{font-size:18px;}
+
+.color_red{
+	color:#F00;
+}
+.color_js{
+	color:#ff8507;
+}
+.font_size_16{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+
+}
+.font_size_14{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+
+}
+.font_size_12{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+
+}
+.font_size_25{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:25px;
+
+}
+.text_color{
+	font-family:Verdana, Geneva, sans-serif;
+	color:#ff8507;
+	font-size:14px;
+}
+.box_list{
+display:-moz-inline-box;
+display:inline-block;
+width:80px;
+word-wrap:break-word;
+}
+.font_14{
+	font-size:16px;
+	color:#cbcbcb;
+}
+
+.text_center{ text-align:center;}
+.text_left{ text-align:left;}
+.text_right{ text-align:right;}

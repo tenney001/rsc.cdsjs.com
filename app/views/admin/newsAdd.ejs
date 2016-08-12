@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN"  ng-app="myApp">
+    <head>
+        <% include inc/meta.ejs %>
+
+        <title><%= title %></title>
+
+        <% include inc/headerlink.ejs %>
+
+    </head>
+    <body ng-controller='newsAdd'>
+        <% include inc/nav.ejs %>
+        
+        <div class="container">
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label for="inputTitle" class="col-sm-2 control-label">新闻标题</label>
+                <div class="col-sm-10">
+                  <input type="hidden" ng-model='newsid' value="" />
+                  <input type="text" ng-model='title' name="news[title]" class="form-control" id="inputTitle" placeholder="新闻标题">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputDescribe" class="col-sm-2 control-label">新闻类型</label>
+                <div class="col-sm-10">
+                  <!-- Single button -->
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-typeid=''>
+                      <strong>请选择</strong> <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <% 
+                        <!-- console.log('newsType:',newsType) -->
+                        for(o in newsType ){
+                      %>
+                        <% if(newsType[o].pid != ""){ %>
+                        <li ng-click='changeType("<%= newsType[o]._id %>","<%= newsType[o].pid %>")'><a href="#"><%= newsType[o].name %></a></li>
+                        <% } %>
+                      <% } %>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputDescribe" class="col-sm-2 control-label">简要描述</label>
+                <div class="col-sm-10">
+                  <input type="text" ng-model='describe' name="news[describe]" class="form-control" id="inputDescribe" placeholder="简要描述">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="editor" class="col-sm-2 control-label">新闻内容</label>
+                <div class="col-sm-10">
+                  <input id="" ng-model='content' type="hidden" name="news[content]" />
+                  <script id="editor" type="text/plain" style="width:100%;height:300px;"></script>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <button type="submit" class="btn btn-default" ng-click="sub()">提交</button>
+                  <button type="button" class="btn btn-danger" onclick="window.history.go(-1)">返回</button>
+                </div>
+              </div>
+            </form>
+            
+        </div>
+    </body>
+    <% include inc/footerlink.ejs %>
+    <script type="text/javascript" charset="utf-8" src="/libs/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/libs/ueditor/ueditor.all.min.js"> </script>
+    <script type="text/javascript" charset="utf-8" src="/libs/ueditor/lang/zh-cn/zh-cn.js"> </script>
+    <script type="text/javascript" src="/js/newsadd.js"></script>
+    <script type="text/javascript">
+      
+      //实例化编辑器
+      //建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
+      var ue = UE.getEditor('editor');
+
+      $(function () {
+        $('.dropdown-menu li a').on('click',function () {
+          var newsTypeId = $(this).data('typeid');
+          var newsTypeName = $(this).text();
+          $(this)
+            .parents('.btn-group')
+            .children('button.dropdown-toggle')
+            // .data('typeid',newsTypeId)
+            .children('strong')
+            .text(newsTypeName)
+        })
+      })
+    </script>
+</html>

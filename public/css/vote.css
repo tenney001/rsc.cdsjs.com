@@ -1,0 +1,24 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/*-----------------------详细----------------------*/
+/*--时间+搜索--*/
+.search_div{ width: 170px; height: 20px; line-height: 20px; border: 1px solid #135ab3; border-radius: 5px; }
+.search_div input{ width: 133px; height: 18px; background: #e1e3ed; margin-top: -2px; margin-left: 2px; padding: 0 5px; border: 0; vertical-align: middle; }
+.search_div a{ display: inline-block; width: 20px; height: 20px; text-align: center; vertical-align: middle; }
+/*--新闻内容--*/
+.content{ padding: 60px 150px; min-height: 500px; background: #e8e9eb; }
+.radius_shadow{ border-radius: 5px; box-shadow:0 0 4px #c1c1ca;}
+.title{ font-weight: bold; font-size: 26px; text-align: center; color: #0f47a6; line-height: 30px;}
+.vote_list li{ margin-top: 40px; }
+.vote_title{ font-size: 14px; color: #0f47a2; }
+.vote_list table{ border-left: 1px solid #0f47a2; border-top: 1px solid #0f47a2; }
+.vote_list table tr td{ height: 26px; padding:0 10px; color: #0f47a2; border-right: 1px solid #0f47a2; border-bottom: 1px solid #0f47a2; }
+.vote_list table tr.tr_head td{ background:#0f47a2; border-right: 1px solid #fff; color: #fff; }
+.vote_list table tr.tr_head td.last{ border-right: 1px solid #0f47a2;}
+.vote_list table tr.tr_body td.last{ padding-left: 0; }
+.vote_bar{ width: 160px; height: 20px; background:#0f47a2; }
+.vote_btn{ color: #c03c40; }
+.vote_state{ margin-top: 5px; color: #bd262a; }
+.page{ background: #fff; padding: 10px; }
+.page .pagetotal,.page .prev,.page .pagenum,.page .next{ display: inline-block; padding: 5px 10px; border:1px solid #ccc; }
+.page .pagenum.current{ border: 1px solid #fff; }
